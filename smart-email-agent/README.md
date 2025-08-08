@@ -12,6 +12,14 @@ This project demonstrates a complete AI automation workflow using N8N, combining
 
 Simply type your message and the AI agent will help you find customers and send emails automatically!
 
+### 💬 Chat Interface Demo
+![Chat Demo](demo-images/chat-demo.png)
+*Real-time conversation with the AI agent - natural language queries get instant, intelligent responses*
+
+### 📧 Email Automation Demo  
+![Email Demo](demo-images/email-demo.png)
+*Automatic email generation and sending based on user requests*
+
 ## 🎯 What It Does
 
 - **Understands Natural Language**: Chat with the AI using plain English
@@ -24,21 +32,21 @@ Simply type your message and the AI agent will help you find customers and send 
 ### Workflow 1: Data Processing Pipeline
 Converts Google Docs customer data into searchable vector embeddings using Pinecone.
 
-![Pinecone Data Processing Workflow](images/pinecone-workflow.png)
+![Pinecone Data Processing Workflow](workflow-images/pinecone-workflow.png)
 
 **Flow**: Manual Trigger → Google Docs → Data Loader → Text Splitter → Token Splitter → OpenAI Embeddings → Pinecone Storage
 
 ### Workflow 2: Main AI Agent
 The brain of the system - handles conversations and orchestrates all operations.
 
-![Main AI Agent Workflow](images/agent-workflow.png)
+![Main AI Agent Workflow](workflow-images/agent-workflow.png)
 
 **Flow**: Chat Input → AI Agent with Memory → Vector Search → Smart Decision Making → Email Trigger (if needed)
 
 ### Workflow 3: Email Automation
 Automatically composes and sends emails when requested by users.
 
-![Email Automation Workflow](images/email-workflow.png)
+![Email Automation Workflow](workflow-images/email-workflow.png)
 
 **Flow**: Triggered by Agent → Message Processing → Email Composition → Send Email → Confirmation
 
@@ -66,9 +74,6 @@ Automatically composes and sends emails when requested by users.
 **User**: "Email Sarah Johnson about our new product launch"
 **Agent**: "Email sent to Sarah Johnson (sarah.j@email.com) about the new product launch!"
 
-**User**: "Who are my customers in New York?"
-**Agent**: "Here are your New York customers: [lists customers with details]"
-
 ## 🎥 How It Works
 
 1. **Data Setup**: Customer information is stored in Google Docs
@@ -81,7 +86,7 @@ Automatically composes and sends emails when requested by users.
 ## 🌟 Project Highlights
 
 - **100% Visual Workflows**: No coding required, everything built with N8N
-- **AI-Powered**: Uses latest OpenAI models for natural conversations
+- **AI-Powered**: Uses OpenAI models for natural conversations
 - **Vector Search**: Advanced semantic search capabilities
 - **Production Ready**: Live demo with real webhook integration
 - **Scalable**: Handles thousands of customer records efficiently
@@ -99,7 +104,6 @@ Automatically composes and sends emails when requested by users.
 Visit the live chat and try these example queries:
 - "Find all customers with Gmail addresses"
 - "Email John Smith about tomorrow's meeting"
-- "Show me customers from California"
 - "Send a thank you email to recent customers"
 
 ## 🔗 Live Project
