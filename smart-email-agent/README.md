@@ -1,61 +1,111 @@
-# 🤖 Smart Email Agent using n8n + OpenAI + Pinecone
+# 🤖 AI Email Agent - N8N Automation Project
 
-This project is a **context-aware email-sending agent** built using [n8n](https://n8n.io/). It uses OpenAI for chat response, Google Docs as the data source, and Pinecone for semantic search.
+An intelligent AI-powered email agent that processes customer data from Google Docs, uses vector embeddings for smart search, and automatically sends emails based on natural language conversations.
 
-> 🟢 **Live Chat Demo**:  
-> 👉 [Click here to try the agent](https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
+## 🌟 Project Overview
+
+This project demonstrates a complete AI automation workflow using N8N, combining document processing, vector search, and conversational AI to create an intelligent email assistant.
+
+## 🚀 Live Demo
+
+**Try it now:** [https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat](https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
+
+Simply type your message and the AI agent will help you find customers and send emails automatically!
+
+## 🎯 What It Does
+
+- **Understands Natural Language**: Chat with the AI using plain English
+- **Finds Customers Instantly**: Uses vector search to locate customers from your database
+- **Sends Emails Automatically**: When you ask to email someone, it handles everything
+- **Remembers Context**: Maintains conversation history for better interactions
+
+## 🏗️ System Architecture
+
+### Workflow 1: Data Processing Pipeline
+Converts Google Docs customer data into searchable vector embeddings using Pinecone.
+
+![Pinecone Data Processing Workflow](images/pinecone-workflow.png)
+
+**Flow**: Manual Trigger → Google Docs → Data Loader → Text Splitter → Token Splitter → OpenAI Embeddings → Pinecone Storage
+
+### Workflow 2: Main AI Agent
+The brain of the system - handles conversations and orchestrates all operations.
+
+![Main AI Agent Workflow](images/agent-workflow.png)
+
+**Flow**: Chat Input → AI Agent with Memory → Vector Search → Smart Decision Making → Email Trigger (if needed)
+
+### Workflow 3: Email Automation
+Automatically composes and sends emails when requested by users.
+
+![Email Automation Workflow](images/email-workflow.png)
+
+**Flow**: Triggered by Agent → Message Processing → Email Composition → Send Email → Confirmation
+
+## 💡 Key Features
+
+- **Smart Search**: Find customers using natural language descriptions
+- **Conversation Memory**: Remembers what you talked about
+- **Automatic Email Sending**: Just say "email John about the meeting" 
+- **Real-time Responses**: Instant replies via webhook integration
+- **No-Code Solution**: Built entirely with N8N visual workflows
+
+## 🛠️ Tech Stack
+
+- **N8N** - Workflow automation platform
+- **OpenAI GPT** - Conversational AI and text embeddings  
+- **Pinecone** - Vector database for semantic search
+- **Google Docs API** - Customer data source
+- **Email Service** - Automated email delivery
+
+## 📊 Example Interactions
+
+**User**: "Find customers named Sarah"
+**Agent**: "I found 3 customers named Sarah. Would you like me to show their details?"
+
+**User**: "Email Sarah Johnson about our new product launch"
+**Agent**: "Email sent to Sarah Johnson (sarah.j@email.com) about the new product launch!"
+
+**User**: "Who are my customers in New York?"
+**Agent**: "Here are your New York customers: [lists customers with details]"
+
+## 🎥 How It Works
+
+1. **Data Setup**: Customer information is stored in Google Docs
+2. **Vector Processing**: Documents are converted to searchable embeddings
+3. **Chat Interface**: Users interact through the live chat link
+4. **AI Processing**: Agent understands requests and searches customer data  
+5. **Email Automation**: Automatically sends emails when requested
+6. **Response**: User gets confirmation and results
+
+## 🌟 Project Highlights
+
+- **100% Visual Workflows**: No coding required, everything built with N8N
+- **AI-Powered**: Uses latest OpenAI models for natural conversations
+- **Vector Search**: Advanced semantic search capabilities
+- **Production Ready**: Live demo with real webhook integration
+- **Scalable**: Handles thousands of customer records efficiently
+
+## 🎯 Use Cases
+
+- Customer service automation
+- Sales team assistance  
+- Marketing campaign management
+- Quick customer lookups
+- Automated follow-up emails
+
+## 📱 Try The Demo
+
+Visit the live chat and try these example queries:
+- "Find all customers with Gmail addresses"
+- "Email John Smith about tomorrow's meeting"
+- "Show me customers from California"
+- "Send a thank you email to recent customers"
+
+## 🔗 Live Project
+
+**Chat Interface**: [https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat](https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
 
 ---
 
-## 🧠 What It Does
-
-- Reads customer information from Google Docs.
-- Extracts and indexes data into Pinecone using embeddings.
-- Answers user queries contextually via OpenAI.
-- Sends personalized emails when requested by the user.
-
----
-
-## ⚙️ Architecture Overview
-
-This project is composed of **3 main workflows** in n8n:
-
-### 1. 🧠 AI Agent Flow
-
-Handles incoming chat messages, uses OpenAI to understand user input, pulls context from Pinecone, and responds intelligently.
-
-![Agent Workflow](docs/agent_workflow.png)
-
----
-
-### 2. 📩 Send Email Flow
-
-Triggered when the AI agent decides to send an email. It uses pre-defined parameters such as `To`, `Subject`, `Message`, etc., and includes the sender’s name.
-
-![Send Email Workflow](docs/send_email_workflow.png)
-
----
-
-### 3. 📄 Pinecone Vector Setup
-
-Parses Google Docs, generates embeddings, and stores them into a Pinecone vector store. Used to build the knowledge base for the AI agent.
-
-![Pinecone Workflow](docs/pinecone_workflow.png)
-
----
-
-## 🔐 No Code Shared
-
-This project only shares **workflow images** and a live working example. The source logic and credentials are kept private.
-
----
-
-## 📄 License
-
-MIT License — feel free to fork and build your own based on the idea.
-
----
-
-## 🙋‍♂️ Author
-
-Made with 💡 by [Rishav Gairola](https://github.com/rishav2307)
+*This project showcases modern AI automation using no-code tools - demonstrating how powerful AI workflows can be built visually with N8N, OpenAI, and Pinecone.*
