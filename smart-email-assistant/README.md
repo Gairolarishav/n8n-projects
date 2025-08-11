@@ -14,10 +14,12 @@ Simply type your message and the AI agent will help you find customers and send 
 
 ### 💬 Chat Interface Demo
 ![Chat Demo](demo-images/chat-demo.png)
+
 *Real-time conversation with the AI agent - natural language queries get instant, intelligent responses*
 
 ### 📧 Email Automation Demo  
 ![Email Demo](demo-images/email-demo.png)
+
 *Automatic email generation and sending based on user requests*
 
 ## 🎯 What It Does
@@ -46,7 +48,7 @@ The brain of the system - handles conversations and orchestrates all operations.
 ### Workflow 3: Email Automation
 Automatically composes and sends emails when requested by users.
 
-![Email Automation Workflow](workflow-images/email-workflow.png)
+![Email Automation Workflow](workflow-images/send-email-workflow.png)
 
 **Flow**: Triggered by Agent → Message Processing → Email Composition → Send Email → Confirmation
 
