@@ -8,7 +8,7 @@ This project demonstrates a complete AI automation workflow using N8N, combining
 
 ## 🚀 Live Demo
 
-**Try it now:** [https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat](https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
+**Try it now:** [https://rishavgairola.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat](https://rishavgairola.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
 
 Simply type your message and the AI agent will help you find customers and send emails automatically!
 
@@ -110,7 +110,7 @@ Visit the live chat and try these example queries:
 
 ## 🔗 Live Project
 
-**Chat Interface**: [https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat](https://my-ai-projects.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
+**Chat Interface**: [https://rishavgairola.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat](https://rishavgairola.duckdns.org/webhook/7443ed66-3662-4f4e-bc20-ea2642bb0184/chat)
 
 ---
 
